@@ -1,0 +1,273 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", system-ui;
+}
+
+/*   header style */
+.cursor{
+cursor: pointer;
+}
+.tooltip {
+  cursor: pointer;
+}
+.user_action {
+  position: relative;
+}
+
+.dropdown_menu {
+  position: absolute;
+  top: 100%;
+  right: 0;
+  z-index: 10;
+  width: 200px;
+
+  padding: 10px;
+}
+.card_box_shadow {
+  border: 1px solid red;
+}
+
+.product_title {
+  font-size: 15px;
+}
+li {
+  list-style-type: none;
+}
+/* footer */
+footer {
+  background-color: rgb(30, 30, 30);
+}
+.icon_style {
+  font-size: 30px;
+  color: red;
+}
+
+/* search input field */
+.search_input_field {
+  background: transparent;
+  width: 60%;
+  margin-left: 200px;
+  padding: 10px;
+  margin-top: 9px;
+  border: 2px solid gray;
+  color: white;
+  border-radius: 5px;
+}
+
+.search_results {
+  margin-top: 20px;
+  margin-left: 200px;
+  max-height: 200px;
+  width: 60%;
+  overflow-y: auto;
+  background: transparent;
+  border: 2px solid rgb(87, 86, 86);
+}
+
+.search_results a {
+  display: block;
+  padding: 10px;
+  text-decoration: none;
+  color: #3d3d3d;
+}
+
+.search_results a:hover {
+  background-color: rgb(28, 27, 27);
+  color: red;
+}
+/* Top Products */
+
+.tabs_item {
+  padding: 10px 20px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  color: rgb(71, 70, 70);
+}
+
+.tabs_item:hover {
+  background-color: red;
+  color: white;
+}
+
+.tabs_item.active {
+  background-color: red;
+  color: white;
+}
+
+/* cart style */
+
+/* General Styles */
+.trash_icon {
+  color: red;
+}
+.trash_icon:hover {
+  cursor: pointer;
+}
+
+.cart-img {
+  width: 100%;
+  object-fit: cover;
+  height: 200px;
+}
+
+.cart_left_item {
+  background-color: rgb(40, 40, 40);
+  width: 720px;
+  border-radius: 5px;
+  padding: 10px;
+}
+
+.cart_checkout_btn {
+  width: 100%;
+  margin-left: 20px;
+}
+
+
+/* all products */
+.list_hover:hover { 
+  cursor: pointer;      
+}
+
+.sort_menu li.active {
+  color: red !important;
+}
+/* Range input track color */   
+.range-input {
+  -webkit-appearance: none;
+  width: 100%;
+  height: 8px;
+  background: red;
+  border-radius: 5px;
+  outline: none;
+}
+
+.range-input::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 16px;
+  height: 16px;
+  background-color: #ff6347;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+/* Thumb styling for Firefox */
+.range-input::-moz-range-thumb {
+  width: 16px;
+  height: 16px;
+  background-color: #ff6347;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.filter-bar {
+  background-color: rgb(44, 44, 44);
+  height: 530px;
+}
+
+.filterbar_scrollable_container {
+  height: 100vh;
+  overflow-y: auto;
+  padding-right: 10px;
+}
+
+.filterbar_scrollable_container::-webkit-scrollbar {
+  width: 8px;
+}
+
+.filterbar_scrollable_container::-webkit-scrollbar-thumb {
+  background-color: rgba(232, 225, 225, 0.2);
+  border-radius: 4px;
+}
+
+.filterbar_scrollable_container::-webkit-scrollbar-track {
+  background-color: rgba(0, 0, 0, 0.05);
+}
+
+.close_btn {
+  display: none;
+}
+
+
+/* product details */
+.survices-section{
+  margin-top: 180px;
+}
+.thumbnail-img {
+  width: 70px;
+  cursor: pointer;
+  border-radius: 4px;
+  transition: transform 0.2s;
+}
+
+.thumbnail-img:hover {
+  transform: scale(1.05);
+}
+.product_summary_width {
+  width:50%;
+}
+.pro-offers ul li {
+  background-color: rgb(21, 18, 18);
+}
+.pro-button {
+  color: white !important;
+  background-color: red !important;
+}
+
+/* review-style */
+.review-img {
+  height: 50px;
+  width: 50px;
+  border-radius: 50%;
+}
+.reviews-star {
+  color: red;
+}
+
+@media (max-width:992px){
+  .prod_details_img img{
+    height: 300px;
+  }
+  .filter-bar {
+    height: 750px;
+  }
+}
+@media (max-width:600px){
+  .search_input_field {
+    margin-left: 20%;
+   }
+  .search_results {
+    margin-left: 20%;
+
+  }
+  
+  
+  
+  .product_summary_width {
+    width: auto !important;
+}
+.filter-bar {
+  height: 730px;
+}
+.cart_item_img{
+  width: 60%;
+}
+
+.cart_left_item {
+  width: 380px;
+  padding: 0px;
+  margin: 0px;
+}
+
+.cart_checkout_btn {
+  width: 80%;
+  margin-left: 40px;
+}
+.trash_icon {
+  margin-left: 25%;
+  
+}
+}
